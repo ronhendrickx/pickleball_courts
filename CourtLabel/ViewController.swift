@@ -93,9 +93,9 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         
     }
     
-    // MARK: ad banner functions
+/*     // MARK: ad banner functions
     
-/*    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+   func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
         return true
         
     }
