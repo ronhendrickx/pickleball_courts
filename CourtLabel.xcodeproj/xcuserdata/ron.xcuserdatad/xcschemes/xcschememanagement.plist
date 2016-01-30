@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CourtLabelWatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E4D4DB281BD1BD89004BDCE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4EC58931C5BB84100775015</key>
 		<dict>
 			<key>primary</key>
 			<true/>

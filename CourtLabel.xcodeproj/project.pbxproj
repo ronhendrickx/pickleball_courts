@@ -12,7 +12,56 @@
 		E4D4DB321BD1BD89004BDCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D4DB301BD1BD89004BDCE4 /* Main.storyboard */; };
 		E4D4DB341BD1BD89004BDCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D4DB331BD1BD89004BDCE4 /* Assets.xcassets */; };
 		E4D4DB371BD1BD89004BDCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D4DB351BD1BD89004BDCE4 /* LaunchScreen.storyboard */; };
+		E4EC58981C5BB84100775015 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4EC58961C5BB84100775015 /* Interface.storyboard */; };
+		E4EC589A1C5BB84100775015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EC58991C5BB84100775015 /* Assets.xcassets */; };
+		E4EC58A11C5BB84200775015 /* CourtLabelWatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E4EC58A01C5BB84200775015 /* CourtLabelWatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E4EC58A61C5BB84200775015 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC58A51C5BB84200775015 /* InterfaceController.swift */; };
+		E4EC58A81C5BB84200775015 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC58A71C5BB84200775015 /* ExtensionDelegate.swift */; };
+		E4EC58AA1C5BB84200775015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EC58A91C5BB84200775015 /* Assets.xcassets */; };
+		E4EC58AE1C5BB84200775015 /* CourtLabelWatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E4EC58941C5BB84100775015 /* CourtLabelWatchKit.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4EC58A21C5BB84200775015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D4DB211BD1BD88004BDCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4EC589F1C5BB84200775015;
+			remoteInfo = "CourtLabelWatchKit Extension";
+		};
+		E4EC58AC1C5BB84200775015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D4DB211BD1BD88004BDCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4EC58931C5BB84100775015;
+			remoteInfo = CourtLabelWatchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4EC58B21C5BB84200775015 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E4EC58A11C5BB84200775015 /* CourtLabelWatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4EC58B61C5BB84200775015 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E4EC58AE1C5BB84200775015 /* CourtLabelWatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E4D4DB291BD1BD89004BDCE4 /* CourtLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourtLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +71,26 @@
 		E4D4DB331BD1BD89004BDCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D4DB361BD1BD89004BDCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D4DB381BD1BD89004BDCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4EC58941C5BB84100775015 /* CourtLabelWatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourtLabelWatchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4EC58971C5BB84100775015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E4EC58991C5BB84100775015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4EC589B1C5BB84100775015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4EC58A01C5BB84200775015 /* CourtLabelWatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CourtLabelWatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4EC58A51C5BB84200775015 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E4EC58A71C5BB84200775015 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E4EC58A91C5BB84200775015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4EC58AB1C5BB84200775015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E4D4DB261BD1BD89004BDCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4EC589D1C5BB84200775015 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E4D4DB2B1BD1BD89004BDCE4 /* CourtLabel */,
+				E4EC58951C5BB84100775015 /* CourtLabelWatchKit */,
+				E4EC58A41C5BB84200775015 /* CourtLabelWatchKit Extension */,
 				E4D4DB2A1BD1BD89004BDCE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				E4D4DB291BD1BD89004BDCE4 /* CourtLabel.app */,
+				E4EC58941C5BB84100775015 /* CourtLabelWatchKit.app */,
+				E4EC58A01C5BB84200775015 /* CourtLabelWatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +133,27 @@
 			path = CourtLabel;
 			sourceTree = "<group>";
 		};
+		E4EC58951C5BB84100775015 /* CourtLabelWatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				E4EC58961C5BB84100775015 /* Interface.storyboard */,
+				E4EC58991C5BB84100775015 /* Assets.xcassets */,
+				E4EC589B1C5BB84100775015 /* Info.plist */,
+			);
+			path = CourtLabelWatchKit;
+			sourceTree = "<group>";
+		};
+		E4EC58A41C5BB84200775015 /* CourtLabelWatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E4EC58A51C5BB84200775015 /* InterfaceController.swift */,
+				E4EC58A71C5BB84200775015 /* ExtensionDelegate.swift */,
+				E4EC58A91C5BB84200775015 /* Assets.xcassets */,
+				E4EC58AB1C5BB84200775015 /* Info.plist */,
+			);
+			path = "CourtLabelWatchKit Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +164,51 @@
 				E4D4DB251BD1BD89004BDCE4 /* Sources */,
 				E4D4DB261BD1BD89004BDCE4 /* Frameworks */,
 				E4D4DB271BD1BD89004BDCE4 /* Resources */,
+				E4EC58B61C5BB84200775015 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E4EC58AD1C5BB84200775015 /* PBXTargetDependency */,
 			);
 			name = CourtLabel;
 			productName = CourtLabel;
 			productReference = E4D4DB291BD1BD89004BDCE4 /* CourtLabel.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E4EC58931C5BB84100775015 /* CourtLabelWatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4EC58B31C5BB84200775015 /* Build configuration list for PBXNativeTarget "CourtLabelWatchKit" */;
+			buildPhases = (
+				E4EC58921C5BB84100775015 /* Resources */,
+				E4EC58B21C5BB84200775015 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EC58A31C5BB84200775015 /* PBXTargetDependency */,
+			);
+			name = CourtLabelWatchKit;
+			productName = CourtLabelWatchKit;
+			productReference = E4EC58941C5BB84100775015 /* CourtLabelWatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E4EC589F1C5BB84200775015 /* CourtLabelWatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4EC58AF1C5BB84200775015 /* Build configuration list for PBXNativeTarget "CourtLabelWatchKit Extension" */;
+			buildPhases = (
+				E4EC589C1C5BB84200775015 /* Sources */,
+				E4EC589D1C5BB84200775015 /* Frameworks */,
+				E4EC589E1C5BB84200775015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CourtLabelWatchKit Extension";
+			productName = "CourtLabelWatchKit Extension";
+			productReference = E4EC58A01C5BB84200775015 /* CourtLabelWatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,11 +216,21 @@
 		E4D4DB211BD1BD88004BDCE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ronny Hendrickx";
 				TargetAttributes = {
 					E4D4DB281BD1BD89004BDCE4 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = ZK5EH3QGYA;
+					};
+					E4EC58931C5BB84100775015 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZK5EH3QGYA;
+					};
+					E4EC589F1C5BB84200775015 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZK5EH3QGYA;
 					};
 				};
 			};
@@ -112,6 +248,8 @@
 			projectRoot = "";
 			targets = (
 				E4D4DB281BD1BD89004BDCE4 /* CourtLabel */,
+				E4EC58931C5BB84100775015 /* CourtLabelWatchKit */,
+				E4EC589F1C5BB84200775015 /* CourtLabelWatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +265,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4EC58921C5BB84100775015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EC589A1C5BB84100775015 /* Assets.xcassets in Resources */,
+				E4EC58981C5BB84100775015 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4EC589E1C5BB84200775015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EC58AA1C5BB84200775015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,7 +294,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4EC589C1C5BB84200775015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EC58A81C5BB84200775015 /* ExtensionDelegate.swift in Sources */,
+				E4EC58A61C5BB84200775015 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EC58A31C5BB84200775015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4EC589F1C5BB84200775015 /* CourtLabelWatchKit Extension */;
+			targetProxy = E4EC58A21C5BB84200775015 /* PBXContainerItemProxy */;
+		};
+		E4EC58AD1C5BB84200775015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4EC58931C5BB84100775015 /* CourtLabelWatchKit */;
+			targetProxy = E4EC58AC1C5BB84200775015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E4D4DB301BD1BD89004BDCE4 /* Main.storyboard */ = {
@@ -156,6 +333,14 @@
 				E4D4DB361BD1BD89004BDCE4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E4EC58961C5BB84100775015 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4EC58971C5BB84100775015 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -248,10 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CourtLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -259,10 +448,84 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CourtLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E4EC58B01C5BB84200775015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CourtLabelWatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		E4EC58B11C5BB84200775015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CourtLabelWatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		E4EC58B41C5BB84200775015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CourtLabelWatchKit_Extension;
+				INFOPLIST_FILE = CourtLabelWatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		E4EC58B51C5BB84200775015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CourtLabelWatchKit_Extension;
+				INFOPLIST_FILE = CourtLabelWatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hendrickx.CourtLabel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
 		};
@@ -283,6 +546,23 @@
 			buildConfigurations = (
 				E4D4DB3C1BD1BD89004BDCE4 /* Debug */,
 				E4D4DB3D1BD1BD89004BDCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4EC58AF1C5BB84200775015 /* Build configuration list for PBXNativeTarget "CourtLabelWatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EC58B01C5BB84200775015 /* Debug */,
+				E4EC58B11C5BB84200775015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4EC58B31C5BB84200775015 /* Build configuration list for PBXNativeTarget "CourtLabelWatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EC58B41C5BB84200775015 /* Debug */,
+				E4EC58B51C5BB84200775015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
