@@ -21,7 +21,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     @IBOutlet weak var assignButton: UIButton!
     
-    @IBOutlet weak var banner: ADBannerView!
+    //@IBOutlet weak var banner: ADBannerView!
     
     // MARK: Actions
     
@@ -39,9 +39,9 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         configureButton()
         
         // banner code
-        banner.hidden = true
-        banner.delegate = self
-        self.canDisplayBannerAds = true
+        //banner.hidden = true
+        //banner.delegate = self
+        //self.canDisplayBannerAds = true
         
         
     }
